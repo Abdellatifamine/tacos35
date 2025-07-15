@@ -12,10 +12,10 @@ const Hero = () => {
     
     <section className={styles.hero} style={heroStyle}>
       <div className={styles.heroContent}>
-        <h1>Order the Best Tacos in Town Now</h1>
-        <p>Everything is grilled on charcoal, guaranteed flavor!</p>
+        <h1>Commandez les meilleurs tacos de la ville</h1>
+        <p>Tout est grillé au charbon de bois, saveur garantie !</p>
         <div className={styles.heroButtons}>
-            <a href="#" className="btn btn-primary">Order Now</a>
+            <a href="#" className="btn btn-primary">Commandez maintenant</a>
             
         </div>
       </div>

@@ -17,17 +17,17 @@ const CheckoutForm = ({ cartItems }: { cartItems: CartItem[] }) => {
         }
 
         // <<< === BDEL B'NEMRA DYALK DYAL WHATSAPP HNA === >>>
-        const your_phone_number = '212664132466'; 
+        const your_phone_number = '212605132343'; 
 
         const totalPrice = cartItems.reduce((total, item) => total + (parseFloat(item.price) * item.quantity), 0);
         
-        const orderSummary = `Salam Tacos 35, I would like to place an order:\n\n` +
+        const orderSummary = `Salam Tacos 35, je voudrais passer une commande:\n\n` +
                              `${cartItems.map(item => `- ${item.quantity}x ${item.name}`).join('\n')}\n\n` +
-                             `*Total: ${totalPrice.toFixed(2)} DH*\n\n` +
-                             `*Collection Method: ${deliveryOption === 'livraison' ? 'Delivery' : 'Pickup'}*\n\n` +
-                             `My Information:\n` +
-                             `Name: ${name}\n` +
-                             `Phone: ${phone}\n` +
+                             `*Totale: ${totalPrice.toFixed(2)} DH*\n\n` +
+                             `*Méthode de collecte: ${deliveryOption === 'livraison' ? 'Delivery' : 'Pickup'}*\n\n` +
+                             `Mes informations:\n` +
+                             `Nom: ${name}\n` +
+                             `Téléphone: ${phone}\n` +
                              (deliveryOption === 'livraison' ? `Address: ${address}` : '');
 
         const whatsappUrl = `https://wa.me/${your_phone_number}?text=${encodeURIComponent(orderSummary)}`;
@@ -36,7 +36,7 @@ const CheckoutForm = ({ cartItems }: { cartItems: CartItem[] }) => {
 
     return (
         <div className={styles.checkoutForm}>
-            <h3>Order Information</h3>
+            <h3>Informations sur la commande</h3>
             
             <div className={styles.deliveryOptions}>
                 <label>
@@ -47,7 +47,7 @@ const CheckoutForm = ({ cartItems }: { cartItems: CartItem[] }) => {
                         checked={deliveryOption === 'livraison'} 
                         onChange={(e) => setDeliveryOption(e.target.value)} 
                     />
-                    Delivery
+                    Livraison
                 </label>
                 <label>
                     <input 
@@ -57,16 +57,16 @@ const CheckoutForm = ({ cartItems }: { cartItems: CartItem[] }) => {
                         checked={deliveryOption === 'ranjilih'} 
                         onChange={(e) => setDeliveryOption(e.target.value)} 
                     />
-                    Pickup
+                    Ramasser
                 </label>
             </div>
 
-            <input type="text" placeholder="Full Name" value={name} onChange={e => setName(e.target.value)} required />
-            <input type="tel" placeholder="Phone Number" value={phone} onChange={e => setPhone(e.target.value)} required />
+            <input type="text" placeholder="Nom et prénom" value={name} onChange={e => setName(e.target.value)} required />
+            <input type="tel" placeholder="Numéro de téléphone" value={phone} onChange={e => setPhone(e.target.value)} required />
             
             {deliveryOption === 'livraison' && (
                 <textarea 
-                    placeholder="Detailed Address (Neighborhood, Street...)" 
+                    placeholder="Adresse détaillée (quartier, rue...)"
                     value={address} 
                     onChange={e => setAddress(e.target.value)}
                     required
@@ -74,7 +74,7 @@ const CheckoutForm = ({ cartItems }: { cartItems: CartItem[] }) => {
             )}
 
             <button className="btn btn-primary" style={{width: '100%', marginTop: '1rem'}} onClick={handleWhatsAppOrder}>
-                Send Order via WhatsApp
+                Envoyer la commande via WhatsApp
             </button>
         </div>
     );
@@ -90,10 +90,10 @@ const ShoppingCartModal = ({ isOpen, onClose, cartItems, onUpdateQuantity }: Pro
     <div className={styles.modalOverlay}>
       <div className={styles.modalContent}>
         <button onClick={onClose} className={styles.closeButton}>&times;</button>
-        <h2>Shopping Cart</h2>
+        <h2>Panier</h2>
         
         {cartItems.length === 0 ? (
-          <p style={{textAlign: 'center', margin: '2rem 0'}}>Your cart is empty.</p>
+          <p style={{textAlign: 'center', margin: '2rem 0'}}>Votre panier est vide.</p>
         ) : (
           <>
             <div className={styles.cartItemsList}>

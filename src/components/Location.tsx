@@ -3,7 +3,7 @@ import styles from './Location.module.css';
 const Location = () => {
   return (
     <div className={styles.location}>
-      <h2>Our Location</h2>
+      <h2>Notre emplacement</h2>
       
       
       <div className={styles.mapContainer}>
@@ -18,8 +18,8 @@ const Location = () => {
         </iframe>
       </div>
 
-      <p><strong>Address:</strong> Biougra, l'Khamis Road, in front of the taxi station</p>
-      <p><strong>Opening Hours:</strong> 12:00 PM - 12:00 AM</p>
+      <p><strong>Adresse:</strong> Biougra, l'Khamis Route, devant la station de taxi</p>
+      <p><strong>Horaires d'ouverture:</strong> 12:00 PM - 12:00 AM</p>
     </div>
   );
 };

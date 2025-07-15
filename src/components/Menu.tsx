@@ -70,7 +70,7 @@ const Menu = ({ onAddToCart }: MenuProps) => {
 
   return (
     <div className={styles.menuSection}>
-      <h2>Our Menu</h2>
+      <h2>Notre menu</h2>
       <div className={styles.filterContainer}>
         {categories.map(category => (
           <button
