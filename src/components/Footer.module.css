@@ -1,0 +1,13 @@
+.footer {
+    background-color: var(--card-bg);
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 1px solid #333;
+    margin-top: 2rem;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

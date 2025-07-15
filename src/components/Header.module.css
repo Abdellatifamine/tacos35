@@ -1,0 +1,81 @@
+.header {
+    
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    
+    
+    background: transparent; 
+    border-bottom: none; 
+    
+    padding: 1.5rem 0; 
+    z-index: 100; 
+    transition: background-color 0.3s ease;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoLink {
+  text-decoration: none;
+}
+
+.logoImage {
+  height: 100px; 
+  width: auto; 
+  display: block; 
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li {
+    margin-right: 25px;
+}
+
+.nav ul li a {
+    color: var(--white-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+.cartButton {
+    background: none;
+    border: none;
+    color: var(--white-color);
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+.cartButton:hover {
+    color: var(--primary-color);
+}
+.cartBadge {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    padding: 2px 7px;
+    font-size: 0.7rem;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    border: 1px solid white;
+}

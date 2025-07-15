@@ -1,0 +1,149 @@
+.menuSection {
+  color: #000000;
+  padding: 3rem 1rem;
+  border-radius: 12px;
+}
+
+.menuSection h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.filterContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.filterButton {
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: 1px solid #e0e0e0;
+  background-color: #f5f5f5;
+  color: #555;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.filterButton:hover {
+  background-color: #e0e0e0;
+}
+
+.activeFilter {
+  background-color: #FF7A00;
+  color: #FFFFFF;
+  border-color: #FF7A00;
+}
+
+.menuGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.menuItem {
+  background-color: #242424;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+}
+
+.menuItem:hover {
+  transform: translateY(-5px);
+}
+
+.itemImage {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.itemDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.2rem;
+}
+
+.itemName {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.itemPrice {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.addToCartButton {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Media Queries */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .menuSection {
+    padding: 2rem 1rem;
+  }
+
+  .menuSection h2 {
+    font-size: 2rem;
+  }
+
+  .itemImage {
+    height: 220px;
+  }
+
+  .itemDetails {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .itemName, .itemPrice {
+    font-size: 0.95rem;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .filterContainer {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .filterButton {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menuGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .itemImage {
+    height: 200px;
+  }
+}

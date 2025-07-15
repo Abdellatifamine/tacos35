@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+
+
+:root {
+    --primary-color: #FF7A00; 
+    --dark-bg: #121212; 
+    --card-bg: #1E1E1E; 
+    --text-color: #E0E0E0; 
+    --white-color: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif; 
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+main {
+  width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    color: var(--white-color);
+    margin-bottom: 1rem;
+}
+
+/* ===== Buttons ===== */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.btn-primary:hover {
+    background-color: #e66e00;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--white-color);
+    border: 2px solid var(--white-color);
+    margin-right: 15px;
+}
+.btn-secondary:hover {
+    background-color: var(--white-color);
+    color: var(--dark-bg);
+}

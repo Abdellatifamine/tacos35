@@ -1,0 +1,59 @@
+.hero {
+    height: 100vh; 
+    background-size: cover;
+    background-position: center;
+    
+    
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    text-align: start;
+    padding: 0 20px;
+    padding-left: 10%;
+    padding-bottom: 170px;
+}
+
+.heroContent {
+    max-width: 700px; 
+}
+
+.heroContent h1 {
+    font-size: 68px;
+    line-height: 1.2;
+    color: var(--white-color);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+    font-family: "Fugaz One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.heroContent p {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    color: #f0f0f0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    
+}
+.heroButtons {
+    display: flex;
+    gap: 30px;
+    justify-content: start;
+}
+@media (max-width: 768px) {
+    .heroContent h1 {
+        font-size: 2.5rem;
+    }
+
+    .heroContent p {
+        font-size: 1.1rem;
+    }
+
+    .hero {
+        min-height: 90vh;
+    }
+    .heroContent {
+        
+        padding-bottom: 100px;
+    }
+}
