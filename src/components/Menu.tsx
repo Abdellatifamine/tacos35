@@ -3,16 +3,16 @@ import styles from './Menu.module.css';
 import type { Product } from '../types'; 
 
 
-import tacosBeldiRoyalImg from '/media.jpeg';
-import tacosNormalImg from '/media-2.jpeg';
-import trioTastyImg from '/media-3.jpeg';
-import tacosBowlImg from '/media-4.jpeg';
-import burgerImg from '/media-5.jpeg';
-import tropicaleImg from '/media-6.jpeg';
-import sodaImg from '/media-7.jpeg';
-import fritesImg from '/media-8.jpeg';
-import eauImg from '/media-9.jpeg';
-import tiramisuImg from '/media-10.jpeg';
+import tacosBeldiRoyalImg from '/media.jpg';
+import tacosNormalImg from '/media-2.jpg';
+import trioTastyImg from '/media-3.jpg';
+import tacosBowlImg from '/media-4.jpg';
+import burgerImg from '/media-5.jpg';
+import tropicaleImg from '/media-6.jpg';
+import sodaImg from '/media-7.jpg';
+import fritesImg from '/media-8.jpg';
+import eauImg from '/media-9.jpg';
+import tiramisuImg from '/media-10.jpg';
 
 
 const menuData = {

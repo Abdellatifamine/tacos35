@@ -1,6 +1,6 @@
 import styles from './Hero.module.css';
 
-import heroBgImage from '/hdr355.png'; 
+import heroBgImage from '/hdr355.jpg'; 
 
 const Hero = () => {
   
